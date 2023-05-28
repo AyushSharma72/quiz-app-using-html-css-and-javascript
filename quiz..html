@@ -1,0 +1,66 @@
+<html>
+    <head>
+      <link rel="stylesheet"  href="quiz.css">
+        
+        <title>
+            QUIZ APP
+        </title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    </head>
+    <body>
+            <!--outer div-->
+            <div class="outerdiv"> 
+              <!--inner div-->
+            <div  class ="innerdiv" id="inner">
+               <!-- div shown when the quiz is over default dispaly none  'quizover()'' function make this div visible -->
+            <div id="quizover" class="quizover2"><h1 class="adjust" >QUIZ OVER </h1>
+            <p id ="para"></p>
+            <p id ="answerpara"></p>
+            <button id="reset" onclick="resetquiz()">RESET</button> <!--hidden-->
+            </div>
+                <!-- div which is currently displayed display is block -->
+            <div class="precontent" id="startbuttoncontent">
+            <h2 > PRESS START BUTTON TO START THE QUIZ</h2>
+            <button  id="startbutton" onclick="visible();loadquestion();pre_enable()">START</button>
+            </div>
+           
+          <!--div which contain the quiz questions, options, next button pre and next arrows by deflault hiiden-->
+        <div class ="postcontent" id="startpostcontent"> <!--hidden-->
+        <div>
+        <h2 id="question">Question goes here</h2> 
+        </div>
+        <div class="Option option1" id="a">
+        <input type="radio" name="option" value="a" class="radio" id="label1">
+        <label   for="label1" class="labelclass"> Option1</label>
+        </div>
+        <div class="Option" id="b">
+        <input type="radio"  name="option"  value="b"class="radio"  id="label2">
+        <label for="label2" class="labelclass"> Option2</label>
+        </div>
+        <div class="Option" id="c">
+        <input type="radio"  name="option"   value="c" class="radio"  id="label3" >
+        <label  for="label3" class="labelclass"> Option3</label>
+        </div>
+        <div class="Option" id="d">
+        <input type="radio" name="option"   value="d" class="radio"  id="label4">
+        <label   for="label4" class="labelclass"> Option4</label>
+        </div>
+       <!--another div for the three buttons next prevoius and right arrow-->
+        <div class="buttondiv"> 
+          
+          <i class="bi bi-arrow-left-square-fill" style="width:fit-content;" id ="prearrow" onclick= "prequestion()"></i>
+        <button  id="nextbutton" onclick="answercompare();increseindex();reset();loadquestion();right_enable();pre_enable()">Next</button><!--next button-->
+       <i class="bi bi-arrow-right-square-fill" style="width:fit-content;"   id="rightarrow" onclick= "nextquestion()" ></i>
+       
+        </div><!--button div closed-->
+        </div><!--parent of button div closed-->
+        </div><!--inner div closed-->
+        </div><!--outer div closed-->
+
+        <script src="https://kit.fontawesome.com/c803804b72.js" crossorigin="anonymous">
+        </script>
+        <script  src="quiz.js">
+        </script>
+       
+ </body>
+ </html>

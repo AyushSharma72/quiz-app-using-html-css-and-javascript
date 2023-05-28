@@ -1,0 +1,176 @@
+
+             body{
+                display:flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .outerdiv{
+                height: 100%;
+                width: 100%;
+                border: 2px solid black;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color:rgb(49, 144, 252);
+                     }
+           .innerdiv{
+                 height:500px;
+                width: 700px;
+              box-shadow: 2px 2px 19px black;
+                background-color:white ;
+                box-shadow: 2px 2px 15px black;
+                     }
+                     #buttondiv{
+                        position: relative;
+                        bottom: 15px;
+                        right:8px}
+
+           #startbutton {   
+            background-color: rgb(49, 144, 252);
+            color: aliceblue;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: bold;
+            font-size: 20px;
+            border-radius: 5px;
+            border: 1px solid black;
+            box-shadow: 2px 2px 3px black;
+            cursor:pointer;
+            transition: 0.2s;
+           }
+           #startbutton:hover{
+            scale: 0.9;
+            border: 3px solid black;
+            background-color: blue; 
+           }
+       
+          #nextbutton:hover{
+          
+            border: 3px solid black;
+            background-color: blue;
+          }
+          #nextbutton:active{
+            scale: 0.9;
+           
+          }
+
+         
+                       .Option{
+                       padding:20px;
+                     
+                       transition: 0.5s;
+                       cursor:pointer;
+
+                       }
+                       .Option:hover{
+                        background-color:darkgray;
+                       font-weight:bold;
+
+                       }
+                      
+
+                       .labelclass{
+                        font-family:Georgia, 'Times New Roman', Times, serif;
+                        cursor: pointer;
+                       
+                       }
+                       #question{
+                        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                        padding:20px;
+                        border-bottom:2px solid black;
+                       }
+                    
+                       .postcontent{
+                        display:none;
+                       }
+                       .precontent{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: column;
+                        
+                       }
+                #quizover{
+                    display: none;
+                                  
+                }
+                    .quizover2{
+                     height:200px;
+                      display:flex;
+                      align-items:center;
+                      justify-content:center;
+
+                    }
+                    #reset{
+            background-color: rgb(49, 144, 252);
+            color: aliceblue;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: bold;
+            font-size: 20px;
+            border-radius: 5px;
+            border: 2px solid black;
+            box-shadow: 2px 2px 8px black;
+            position: relative;
+            left: 300px;
+
+                         }
+       #reset:hover{
+            scale: 0.9;
+            border: 3px solid black;
+            background-color: blue; 
+           }
+                  .adjust{
+                            position: relative;
+                            left: 250px
+                         }
+                         
+                         #para{
+                          font-weight: bold;
+                          font-size: large;
+                          font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                          position:relative;
+                          left:270px;
+                         }
+                         #answerpara{
+                          font-weight: bold;
+                          font-size: large;
+                          font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                          position:relative;
+                          left:170px;
+                         }
+                         .fa-solid{
+                          width: 20px;
+                          height: 20px;
+                         }
+                     .radio{
+                      
+                       cursor:pointer
+                     }
+                     #rightarrow{
+                      cursor: pointer;
+                                }
+                  
+                  #prearrow {
+                            cursor: pointer;
+                            margin-left: 10px;
+                            }
+                            
+                            .buttondiv{
+                              display: flex;
+                              column-gap: 290px;
+                              height:80px;
+                              align-items:center;
+                             }
+                             #nextbutton{
+                              background-color: rgb(49, 144, 252);
+                              color: aliceblue;
+                              font-family: Georgia, 'Times New Roman', Times, serif;
+                              font-weight: bold;
+                              font-size: 20px;
+                              border-radius: 5px;
+                              border: 2px solid black;
+                              box-shadow: 2px 2px 8px black;
+                              transition:0.2s;
+                               cursor:pointer;
+                          
+                  
+                            }
